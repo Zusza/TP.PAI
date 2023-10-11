@@ -1,0 +1,33 @@
+switch(prompt("Enter name",""))
+{
+    case "Ezio":
+    alert ("Vai a farti fottere!");
+    break;
+    case "Connor":
+    alert ("But you burn it down father");
+    break;
+    case "Shay":
+    alert ("I make my own luck");
+    break;
+    case "Jacob":
+    alert ("We'll call ourselves The Rooks!");
+    break;
+    case "Bayek":
+    alert ("Ned!");
+    default:
+    alert("I do not know you");
+    break;
+}
+
+---HTML---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayek</title>
+    <script src="Skrypt-11.10.23r.js"></script>
+</head>
+<body>
+</body>
+</html>
