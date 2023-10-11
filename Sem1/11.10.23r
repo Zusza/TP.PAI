@@ -1,0 +1,37 @@
+////Pętle
+////1.for:
+// let pom = ""
+// for (let i = 1; i <= 10; i++)
+// {
+//     pom+=i+"<br>"
+// }
+// document.write(pom);
+
+////2.while:
+// let i = 0;
+// while(i <= 10)
+// {
+//     i++;
+//     alert(i-1);
+// }
+
+//3.do?:
+// let i = 0;
+// do
+// {
+
+// }
+// while(i<=10)
+
+---HTML---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayek</title>
+    <script src="Skrypt2-11.10.23r.js"></script>
+</head>
+<body>
+</body>
+</html>
