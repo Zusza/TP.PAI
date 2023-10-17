@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay</title>
+</head>
+<body>
+    <script language="javascript">
+        // alert("Witaj"); //okienko - ostrzeżenie
+        // confirm("Czy jesteś pewien?"); //okienko - potwierdzenie (true/false to bool)
+        // prompt("Podaj imię","Type here");
+
+        //Deklaracja zmiennej - 2 sposoby - nieważne czy użyje let czy var, oba zadziałają
+        // var a = "Zee";
+        // let a = "Zusza";
+
+        //Skrypt ("="-operator przypisania, "=="-operator porównania, "==="-operator identyczności), działania matematyczne - w nawiasie np. (a-b) UWAGA dodawanie = (a-+-b)
+        // let a=(prompt("Podaj pierwszą liczbe",""));
+        // let b=(prompt("Podaj drugą liczbe",""));
+        // alert("Suma liczb " + a + " i " + b + " wynosi" + " " + (a-+-b)); 
+        
+    </script>
+</body>
+</html> 
