@@ -1,0 +1,23 @@
+function test(){
+    alert("I make my own luck.");
+}
+---HTML---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay Patric Cormac</title>
+    <script src="Skrypt.js"></script>
+    <!-- <script language="javascript"> Metoda bez osobnego pliku js
+        function test(){
+            alert("I make my own luck.");
+        }
+    </script> -->
+</head>
+<body>
+    <body style="background-color: rgb(26, 81, 37)"></body>
+    <input type="button" onclick="test()" value="click">
+    <a href="javascript:test()">click here</a>
+</body>
+</html>
