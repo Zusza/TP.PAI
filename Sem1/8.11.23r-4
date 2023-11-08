@@ -1,0 +1,40 @@
+---Coś nie działa xd---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defekcja</title>
+    <style>
+        body{
+            background-color: rgb(85, 140, 250);
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Wybierz</legend>
+        <input type="checkbox" name="radio" checked>A
+        <input type="checkbox" name="radio" checked>B
+        <input type="checkbox" name="radio" checked>C
+        <br>
+        <input type="button" value="wyslij" onClick="funkcja2()">
+    </fieldset>
+    <script>
+        function funkcja3(){
+            var f=document.getElementsByName('ptaki');
+            var v='';
+            for(var i=0;i<f.length;i++){
+                if(f[i].checked){
+                    v=v+' '+f[i].value;
+                }
+            }
+            if(v===' '){
+                v="Niedokonałeś żadnego wyboru.";
+            }
+            alert(v);
+        }
+    </script>
+</body>
+</html>
