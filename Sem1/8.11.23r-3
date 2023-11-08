@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defekcja</title>
+    <style>
+        body{
+            background-color: rgb(93, 28, 28)
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Wybierz</legend>
+        <input type="radio" name="radio" checked>A
+        <input type="radio" name="radio" checked>B
+        <input type="radio" name="radio" checked>C
+        <br>
+        <input type="button" value="wyslij" onClick="funkcja2()">
+    </fieldset>
+    <script>
+        function funkcja2(){
+            var f=document.getElementsByName('radio');
+            var v;
+            for(var i=0;i<f.length;i++){
+                if(f[i].checked){
+                    v=f[i].value;
+                }
+            }
+            alert(v);
+        }
+    </script>
+</body>
+</html>
