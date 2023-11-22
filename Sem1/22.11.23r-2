@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayek</title>
+    <style>
+        div {height: 100vh;
+                width: 50%;}
+
+        content {display: flex;
+                height: auto;
+                width: auto;
+                flex-direction: column;}
+
+        body {margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: row;}
+
+        div:nth-of-type(1) {display: flex;
+                            align-items: center;
+                            justify-content: center;}
+
+        button {align-self: flex-end;}
+
+        #cent {display: flex;
+                justify-content: center;
+                align-items: center;}
+    </style>
+</head>
+<body>
+    <div style="background-color:blueviolet;">
+        <content>
+            <input type="text" id="kolor" name="kolor"><br>
+            <center><button onClick="funkcja()">Zmień kolor</button></center>
+        </content>
+    </div>
+    <div id="right-box" class="right-box">
+    </div>
+
+<script>
+
+function funkcja(){
+document.getElementById("right-box").style.backgroundColor = document.getElementById("kolor").value;
+}
+</script>
+</body>
+</html>
