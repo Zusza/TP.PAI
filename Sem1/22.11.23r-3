@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob</title>
+    <style>
+        table, tr, td{
+            border:1px solid rgba(71, 21, 71, 0.977);
+        }
+        table{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var i = 1,a;
+        document.write("<table>");
+        do{
+            a = parseInt(Math.random()*49+1);
+            document.write("<tr><td>"+a+"</td></tr>")
+            i++;
+        }
+        while(i<=6);
+        for (i=0;i<ile;i++) {
+        los = Math.round(Math.random()*(a-1))+1;
+        jest=false;
+        for (j=0;j<l.length;j++) if (a[j]==los) {jest=true;}
+        if (jest) {i--;} else {a[i]=los;}}
+        document.write("<table>");
+    </script>
+</body>
+</html>
