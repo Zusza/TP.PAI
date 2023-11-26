@@ -1,0 +1,15 @@
+Szablony
+Zad.1 - Zlicz ilość handlowców stanami i wyświetl tylko te stany gdzie liczba dealerów jest większa od 2 i uporządkuj wynik stanami rosnąco. (Tabela Dealerships)
+SELECT Stan, COUNT(*) AS LiczbaDealerów
+FROM TabelaHandlowców
+GROUP BY Stan
+HAVING COUNT(*) > 2
+ORDER BY Stan ASC;
+
+Zad.2 - Wyznacz sumę zakupów dla wszystkich nabywców podając ich imię i nazwisko. Wyświetl tylko tych nabywców, których kwota wydatków przekracza 500 i uporządkuj wynik nazwiskami rosnąco.
+(Tablele Customes i Sales)
+SELECT Imię, Nazwisko, SUM(KwotaZakupu) AS SumaZakupów
+FROM TabelaNabywców
+GROUP BY Imię, Nazwisko
+HAVING SUM(>KwotaZakupu) > 500
+ORDER BY Nazwisko ASC;
