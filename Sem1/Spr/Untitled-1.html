@@ -33,3 +33,78 @@
     </script>
 </body>
 </html>
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            border: 1px solid;
+        }
+        table{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center><script>
+        var i = 1,a;
+        document.write("<table>");
+        do{
+            a = parseInt(Math.random()*49+1);
+            document.write("<tr><td>"+a+"</td></tr>");
+            i++
+        }
+        while(i<=6);
+    </script></center>
+</body>
+</html>
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100vh;
+            width: 50%;
+        }
+        body{
+            flex-direction: row;
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: blueviolet;">
+        <content>
+            <input type="number" id="l1" placeholder="1l">
+            <input type="number" id="l2" placeholder="2l">
+            <button onClick="dodawanie()">OK</button>
+        </content>
+    </div>
+    <div style="background-color: brown;" id="cent">
+        <center><p id="xd"></p></center>
+    </div>
+    <script>
+        function dodawanie(){
+            x = document.getElementById("l1").value;
+            y = document.getElementById("l2").value;
+            console.log(x,y);
+            document.getElementById("xd").innerHTML=x-+-y;
+        }
+    </script>
+</body>
+</html>
