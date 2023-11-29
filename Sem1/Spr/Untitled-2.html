@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td{
+            border: 1px solid;
+        }
+        table{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center><script>
+        var i = 1,a;
+        document.write("<table>");
+        do{
+            a = parseInt(Math.random()*49+1);
+            document.write("<tr><td>"+a+"</td></tr>");
+            i++
+        }
+        while(i<=6);
+    </script></center>
+</body>
+</html>
