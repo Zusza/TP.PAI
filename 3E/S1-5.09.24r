@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.09.24r</title>
+</head>
+<body>
+<center><svg width="151px" height="151px">
+    <rect x="0" y="0" width="73" height="73" fill="red" stroke="black" />
+    <rect x="78" y="0" width="73" height="73" fill="green" stroke="black" />
+    <rect x="0" y="78" width="73" height="73" fill="blue" stroke="black"/>
+    <rect x="78" y="78" width="73" height="73" fill="yellow" stroke="black"/>
+    <circle cx="75" cy="75" r="40" fill="white" stroke="black" />
+  </svg>
+  <svg width="200px" height="200px">
+    <circle cx="100" cy="100" r="90" fill="red" />
+    <rect x="20" y="80" width="160" height="40" fill="white" rx="5" ry="15" />
+  </svg></center>
+</body>
+</html>
