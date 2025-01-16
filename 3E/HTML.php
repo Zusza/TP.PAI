@@ -8,29 +8,36 @@
 <body>
     <form method="post">
         Podaj nazwę bazy danych:
-        <input type="text" id="baza" name="baza"><br><br>
+        <input type="text" id="base" name="base">
+        <br>
+        <br>
         Podaj nazwę tabeli:
-        <input type="text" id="tab" name="tab"><br><br>
+        <input type="text" id="table" name="table">
+        <br>
+        <br>
         Podaj nazwę 1 kolumny:
-        <input type="text" id="kol1" name="kol1"><br><br>
+        <input type="text" id="kol1" name="kol1">
+        <br>
+        <br>
         Podaj nazwę 2 kolumny:
-        <input type="text" id="kol2" name="kol2"><br><br>
-        <input type="submit" value="Utwórz bazę danych">
+        <input type="text" id="kol2" name="kol2">
+        <br>
+        <br>
+        <input type="submit" value="Utwórz baze">
     </form>
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $baza = $_POST['baza'];
-        $tabela = $_POST['tab'];
+        $base = $_POST['base'];
+        $table = $_POST['table'];
         $kol1 = $_POST['kol1'];
         $kol2 = $_POST['kol2'];
         $conn = new mysqli('localhost', 'root', '');
-        $sql = "CREATE DATABASE IF NOT EXISTS $baza";
+        $sql = "CREATE DATABASE IF NOT EXISTS $base";
         if ($conn->query($sql) === TRUE) {
-            $conn->select_db($baza);
-            $sql = "CREATE TABLE IF NOT EXISTS $tabela (
+            $conn->select_db($base);
+            $sql = "CREATE TABLE IF NOT EXISTS $table (
                         id INT(6) AUTO_INCREMENT PRIMARY KEY,
-                        $kol1 VARCHAR(50),
-                        $kol2 VARCHAR(50)
+                        $kol1 VARCHAR(100),
+                        $kol2 VARCHAR(100)
                     )";
             if ($conn->query($sql) === TRUE) {
                 echo "Baza utworzona";
@@ -41,7 +48,6 @@
             echo"Błąd";
         }
         $conn->close();
-    }
     ?>
 </body>
 </html>
